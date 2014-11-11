@@ -1,7 +1,7 @@
 typeScale
 =========
 
-A very simple script to scale typography based on the viewport width
+A very simple and small (271 bytes) script to scale typography based on the viewport width.
 
 
 ```javascript
@@ -27,3 +27,6 @@ And that's it.
 | 1200          | 1.078125      | 17.25        | 1.35         |
 | 1600          | 1.15625       | 18.5         | 1.4          |
 | 2000          | 1.234375      | 19.75        | 1.45         |
+
+
+[Demo](http://codepen.io/zhirkovski/pen/GgKbxY)
