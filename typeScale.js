@@ -1,12 +1,30 @@
-var w=window,
-    d=document,
-    e=d.documentElement,
-    g=d.getElementsByTagName("body")[0],
-    x=w.innerWidth||e.clientWidth||g.clientWidth;
-g.style.fontSize = (x+4320)/5120 + "em";
-g.style.lineHeight = 125e-6*x + 1.2;
+/*! typeScale v1.1 | MIT License | git.io/LXRG_w | Paul Browne | 2014 */
 
-/*
-size in pixels
-g.style.fontSize = x/320 + 13.5 + "px";
-*/
+function typeScale(){
+    
+    // http://andylangton.co.uk/blog/development/get-viewport-size-width-and-height-javascript
+    
+    var a=window,
+        b=document,
+        c=b.documentElement,
+        d=b.getElementsByTagName("body")[0],
+        x=a.innerWidth||c.clientWidth||d.clientWidth;
+        
+    // The actual math part for tweeking the font-size, the pixel equivalent is
+    // g.style.fontSize = x/320 + 13.5 + "px";
+    // where 'x' is the viewport width
+        
+    d.style.fontSize=(x+4320)/5120+"em",
+    
+    // Tweeks the line-height ever so slightly, by 0.05 every 400px of width
+    
+    d.style.lineHeight=125e-6*x+1.2
+}
+window.addEventListener("resize",typeScale),
+typeScale();
+
+
+
+
+
+
