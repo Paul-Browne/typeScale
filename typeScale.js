@@ -18,7 +18,7 @@ function typeScale(){
     
     // Tweeks the line-height ever so slightly, by 0.05 every 400px of width
     
-    d.style.lineHeight=125e-6*x+1.2
+    d.style.lineHeight=125e-6*x+1.25
 }
 window.addEventListener("resize",typeScale),
 typeScale();
