@@ -1,7 +1,7 @@
-typeScale
+typeScale 
 =========
 
-A very simple and small (271 bytes) script to scale typography based on the viewport width.
+A very simple and small (271 bytes) script to scale typography based on the viewport width. 
 
 
 ```javascript
@@ -82,3 +82,5 @@ font-size = x²/α - x*β ± γ
 but hopefully you can tweek the formula to fit your font
 
 [Demo](http://codepen.io/zhirkovski/pen/GgKbxY)
+
+:octocat:
