@@ -66,10 +66,10 @@ so in my equation α = 0.000125, which means the line-height will grow 0.05 for 
 
 Every font is different, not just in style. Some fonts look tiny at 16px whilst others look relatively large. So you may very well need to tweek the formulae depending on what font you set as your base type. As a rule of thumb: 
 
-Increase β so that the font starts off larger (for mobiles)
-Decrease β so that the font starts off smaller (for mobiles)
-Increase α so that the font ends up smaller (for desktps)
-Decrease α so that the font ends up larger (for desktps)
+Increase β so that the font starts off larger (for mobiles).
+Decrease β so that the font starts off smaller (for mobiles).
+Increase α so that the font ends up smaller (for desktps).
+Decrease α so that the font ends up larger (for desktps).
 
 Remember to compensate though, so If your font looks too small on mobiles but just right on desktops then you should increase β (eg. to 15), but also increase α (eg. to 450).
 
