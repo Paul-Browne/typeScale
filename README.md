@@ -40,9 +40,9 @@ You don't! Only kidding.
 Firstly, it's easier to use the formula for calculating the font-size in pixels, rather than em's, which is 
 ``` 
 fontSize = x/α + β
-where     α = rate of growth, 
-          x = width of viewport (px),
-          β = font-size @ width = 0
+where  α = rate of growth, 
+       x = width of viewport (px),
+       β = font-size @ width = 0
 ```
 so in my equation α = 320, which means the font-size will grow 1px for every 320px increase in width, with a starting point of font-size: 13.5px @ width = 0.
 
