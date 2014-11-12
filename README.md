@@ -35,8 +35,6 @@ then remove `d.style.lineHeight=125e-6*x+1.2`, and the comma after the "em" on t
 
 > How do I change the rate at which the font-size and line-height grow?
 
-You don't! Only kidding.
-
 Firstly, it's easier to use the formula for calculating the font-size in pixels, rather than em's, which is 
 ``` 
 fontSize = x/α + β
@@ -62,7 +60,11 @@ where     α = rate of growth,
           x = width of viewport (px),
           β = line-height @ width = 0
 ```    
-so in my equation α = 0.000125, which means the line-height will grow 0.05 for every 400px increase in width, with a starting point of line-height: 1.2 @ width = 0.  
+so in my equation α = 0.000125, which means the line-height will grow 0.05 for every 400px increase in width, with a starting point of line-height: 1.2 @ width = 0.
+
+> My font is unreadable on mobiles *or* massive on desktops
+
+Every font is different, not just in style. Some fonts look tiny at 16px whilst others look relatively large. So you may very well need to tweek the formulae, depending on what font you set as your base type. When calibrating these formulae I used [Open Sans](https://www.google.com/fonts/specimen/Open+Sans)
 
 
 [Demo](http://codepen.io/zhirkovski/pen/GgKbxY)
