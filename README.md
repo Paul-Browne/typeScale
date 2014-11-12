@@ -66,20 +66,19 @@ so in my equation α = 0.000125, which means the line-height will grow 0.05 for 
 
 Every font is different, not just in style. Some fonts look tiny at 16px whilst others look relatively large. So you may very well need to tweek the formulae depending on what font you set as your base type. As a rule of thumb: 
 
-If your font looks too small on mobiles, but just right on dektops; increase β (eg. to 15) and increase α (eg. to 450) this way your font will start off larger, but will be the same size when the viewport hits desktop size.
+Increase β so that the font starts off larger (for mobiles)
+Decrease β so that the font starts off smaller (for mobiles)
+Increase α so that the font ends up smaller (for desktps)
+Decrease α so that the font ends up larger (for desktps)
 
-If your font looks too large on mobiles, but just right on dektops; decrease β (eg. to 12) and decrease α (eg. to 200) this way your font will start off small, but will grow faster, so that the font is the same when the viewport hits desktop size.
+Remember to compensate though, so If your font looks too small on mobiles but just right on desktops then you should increase β (eg. to 15), but also increase α (eg. to 450).
 
-If your font looks just right on mobiles, but too small on dektops; leave β (at 13.5) but decrease α (eg. to 250ish) this way your font will have grown more by the time the viewport hits desktop size.
+If you still can't get the equation to fit your font, then you may need to use a quadratic equation like:
 
-If your font looks just right on mobiles, but too big on dektops; leave β (at 13.5) but increase α (eg. to 400ish) this way your font will not have grown too much by the time the viewport hits desktop size.
+```
+font-size = x²/α - x*β ± γ
+```
 
-If your font looks too small on all devices; increase β, decrease α
-
-If your font looks too big on all devices; decrease β, increase α
-
-
-When calibrating these formulae I used [Open Sans](https://www.google.com/fonts/specimen/Open+Sans)
-
+but hopefully you can tweek the formula to fit your font
 
 [Demo](http://codepen.io/zhirkovski/pen/GgKbxY)
