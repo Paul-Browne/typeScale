@@ -64,7 +64,22 @@ so in my equation α = 0.000125, which means the line-height will grow 0.05 for 
 
 > My font is unreadable on mobiles *or* massive on desktops
 
-Every font is different, not just in style. Some fonts look tiny at 16px whilst others look relatively large. So you may very well need to tweek the formulae, depending on what font you set as your base type. When calibrating these formulae I used [Open Sans](https://www.google.com/fonts/specimen/Open+Sans)
+Every font is different, not just in style. Some fonts look tiny at 16px whilst others look relatively large. So you may very well need to tweek the formulae depending on what font you set as your base type. As a rule of thumb: 
+
+If your font looks too small on mobiles, but just right on dektops; increase β (eg. to 15) and increase α (eg. to 450) this way your font will start off larger, but will be the same size when the viewport hits desktop size.
+
+If your font looks too large on mobiles, but just right on dektops; decrease β (eg. to 12) and decrease α (eg. to 200) this way your font will start off small, but will grow faster, so that the font is the same when the viewport hits desktop size.
+
+If your font looks just right on mobiles, but too small on dektops; leave β (at 13.5) but decrease α (eg. to 250ish) this way your font will have grown more by the time the viewport hits desktop size.
+
+If your font looks just right on mobiles, but too big on dektops; leave β (at 13.5) but increase α (eg. to 400ish) this way your font will not have grown too much by the time the viewport hits desktop size.
+
+If your font looks too small on all devices; increase β, decrease α
+
+If your font looks too big on all devices; decrease β, increase α
+
+
+When calibrating these formulae I used [Open Sans](https://www.google.com/fonts/specimen/Open+Sans)
 
 
 [Demo](http://codepen.io/zhirkovski/pen/GgKbxY)
