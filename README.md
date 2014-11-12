@@ -12,7 +12,7 @@ function typeScale(){
         d=b.getElementsByTagName("body")[0],
         x=a.innerWidth||c.clientWidth||d.clientWidth;
     d.style.fontSize=(x+4320)/5120+"em",
-    d.style.lineHeight=125e-6*x+1.2
+    d.style.lineHeight=125e-6*x+1.25
 }
 window.addEventListener("resize",typeScale),
 typeScale();
@@ -21,17 +21,17 @@ typeScale();
 
 | Viewport Width| font-size (em)|px equivalent | line-height  |
 | ------------- |---------------|--------------|--------------|
-| 400px         | 0.921875      | 14.75        | 1.25         |
-| 800           | 1.00          | 16           | 1.3          |
-| 1200          | 1.078125      | 17.25        | 1.35         |
-| 1600          | 1.15625       | 18.5         | 1.4          |
-| 2000          | 1.234375      | 19.75        | 1.45         |
+| 400px         | 0.921875      | 14.75        | 1.3         |
+| 800           | 1.00          | 16           | 1.35          |
+| 1200          | 1.078125      | 17.25        | 1.4         |
+| 1600          | 1.15625       | 18.5         | 1.45          |
+| 2000          | 1.234375      | 19.75        | 1.5         |
 
 #####Questions
 
 > I don't want the line-height to change.
 
-then remove `d.style.lineHeight=125e-6*x+1.2`, and the comma after the "em" on the previous line.
+then remove `d.style.lineHeight=125e-6*x+1.25`, and the comma after the "em" on the previous line.
 
 > How do I change the rate at which the font-size and line-height grow?
 
@@ -60,7 +60,7 @@ where     α = rate of growth,
           x = width of viewport (px),
           β = line-height @ width = 0
 ```    
-so in my equation α = 0.000125, which means the line-height will grow 0.05 for every 400px increase in width, with a starting point of line-height: 1.2 @ width = 0.
+so in my equation α = 0.000125, which means the line-height will grow 0.05 for every 400px increase in width, with a starting point of line-height: 1.25 @ width = 0.
 
 > My font is unreadable on mobiles *or* massive on desktops
 
