@@ -15,9 +15,17 @@ function typeScale(){
         
     d.style.fontSize = x/320 + 13.5 + "px",
     
-    // Tweeks the line-height ever so slightly, by 0.05 every 400px of width
+    // Tweeks the line-height ever so slightly,
+    // by 1 for every 8000px of width or,
+    // by 0.05 every 400px of width
     
     d.style.lineHeight = x/8000 + 1.25
 }
+
+// Binds the function to the resize event
+
 window.addEventListener("resize",typeScale),
+
+// Calls the function when the page is loaded
+
 typeScale();
