@@ -1,7 +1,7 @@
 typeScale 
 =========
 
-A very simple and small (271 bytes) script to scale typography based on the viewport width. 
+A very simple and small (270 bytes) when [M&G'd](# "Minified & Gzipped") script to scale typography based on the viewport width.
 
 
 ```javascript
