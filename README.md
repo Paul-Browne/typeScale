@@ -27,6 +27,8 @@ typeScale();
 | 1600          | 1.15625       | 18.5         | 1.45          |
 | 2000          | 1.234375      | 19.75        | 1.5         |
 
+###[Demo](http://codepen.io/zhirkovski/pen/GgKbxY)
+
 #####Questions
 
 > I don't want the line-height to change.
@@ -76,5 +78,3 @@ An increase in α will **decrease** the font-size on desktops.
 Remember to compensate though, so If your font looks too small on mobiles but just right on desktops then you should increase β (eg. to 15), but also increase α (eg. to 450).
 
 Hopefully you can tweek the formula to fit your font.
-
-[Demo](http://codepen.io/zhirkovski/pen/GgKbxY)
